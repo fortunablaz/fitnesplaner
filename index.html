@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16181d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Treningi">
+<title>Dnevnik Treningov</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">Dnevnik <b>Treningov</b></div>
+  <div class="top-sub" id="topSub"></div>
+</header>
+
+<main id="main"></main>
+
+<nav class="tabs" id="tabs">
+  <button data-act="nav" data-view="week" class="tab">
+    <svg viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h3v18H4V4h3zm-1 8v10h12V10zm2 2h3v3H8z"/></svg>
+    <span>Teden</span>
+  </button>
+  <button data-act="nav" data-view="gen" class="tab">
+    <svg viewBox="0 0 24 24"><path d="M3 10h2v4H3zM19 10h2v4h-2zM6 7h3v10H6zM15 7h3v10h-3zM9 11h6v2H9z"/></svg>
+    <span>Trening</span>
+  </button>
+  <button data-act="nav" data-view="clients" class="tab">
+    <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/></svg>
+    <span>Stranke</span>
+  </button>
+  <button data-act="nav" data-view="ex" class="tab">
+    <svg viewBox="0 0 24 24"><path d="M4 5h16v2H4zM4 11h16v2H4zM4 17h10v2H4z"/></svg>
+    <span>Vaje</span>
+  </button>
+  <button data-act="nav" data-view="more" class="tab">
+    <svg viewBox="0 0 24 24"><path d="M5 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+    <span>Več</span>
+  </button>
+</nav>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-bg" data-act="closeModal"></div>
+  <div class="modal-box" id="modalBox"></div>
+</div>
+<div id="toast" class="toast" hidden></div>
+
+<script src="vaje.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
